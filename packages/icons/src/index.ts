@@ -1,0 +1,10 @@
+import Bofang from '~icons/c/bofang'
+import Dianzan from '~icons/c/dianzan'
+import Huatong from '~icons/c/huatong'
+import Liuyan from '~icons/c/liuyan'
+import Maikefeng from '~icons/c/maikefeng'
+import Shezhi from '~icons/c/shezhi'
+import Shoucang from '~icons/c/shoucang'
+import Xiazai from '~icons/c/xiazai'
+import Xunhuan from '~icons/c/xunhuan'
+export { Bofang, Dianzan, Huatong, Liuyan, Maikefeng, Shezhi, Shoucang, Xiazai, Xunhuan }
