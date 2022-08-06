@@ -1,9 +1,11 @@
 {
   "name": "@cjhsyc/icons-monorepo",
-  "version": "0.0.0",
+  "version": "0.0.1-beta.2",
   "description": "",
+  "private": true,
   "scripts": {
-    "dev": "pnpm run -C ./packages/play dev"
+    "dev": "pnpm run -C ./packages/play dev",
+    "build": "pnpm run -C ./packages/icons build"
   },
   "dependencies": {
     "@cjhsyc/icons": "workspace:*"
