@@ -2,13 +2,20 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
-import { Bofang, Dianzan } from '@cjhsyc/icons'
+import { Bofang, Dianzan, Liebiao } from '@cjhsyc/icons'
+import { ElIcon } from 'element-plus'
+import 'element-plus/es/components/icon/style/css'
 </script>
 
 <template>
   <div>
     <bofang />
-    <dianzan />
+    <i style="font-size: 150px; color: skyblue">
+      <dianzan />
+    </i>
+    <el-icon :size="300" color="pink">
+      <bofang />
+    </el-icon>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>

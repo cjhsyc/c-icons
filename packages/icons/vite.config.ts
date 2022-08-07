@@ -25,9 +25,12 @@ export default defineConfig({
       compiler: 'vue3',
       customCollections: {
         c: FileSystemIconLoader('./src/svg', (svg) =>
-          svg.replace(/^<svg /, '<svg fill="currentColor" ')
+          svg
+            .replace(/#111111/g, 'currentColor')
+            .replace(/width="\d*?"|height="\d*?"|class=".*?"/g, '')
         ),
       },
+      scale: 1,
     }),
   ],
 })

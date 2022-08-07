@@ -14,7 +14,7 @@ npm i @cjhsyc/icons
 </script>
 
 <template>
- <dianzan />
+  <dianzan />
   <shoucang />
 </template>
 ```
