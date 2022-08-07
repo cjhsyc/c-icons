@@ -3,11 +3,18 @@
   "version": "0.0.1",
   "license": "MIT",
   "author": "cjhsyc",
-  "type": "module",
+  "keywords": [
+    "icons",
+    "vue",
+    "svg",
+    "vite"
+  ],
+  "homepage": "https://github.com/cjhsyc/c-icons#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/cjhsyc/c-icons.git"
   },
+  "type": "module",
   "files": [
     "dist",
     "types"
