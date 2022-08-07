@@ -1,16 +1,13 @@
 {
   "name": "@cjhsyc/icons-monorepo",
-  "version": "0.0.1-beta.2",
   "description": "",
   "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "dev": "pnpm run -C ./packages/play dev",
     "build": "pnpm run -C ./packages/icons build"
-  },
-  "dependencies": {
-    "@cjhsyc/icons": "workspace:*"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }

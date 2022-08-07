@@ -15,7 +15,7 @@
     "declaration": true,
     // 指定d.ts文件生成路径(declaration必须为true)
     "declarationDir": "./dist/types",
-    "types": ["unplugin-icons/types/vue"]
+    "types": ["./types/index"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]

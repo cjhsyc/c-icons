@@ -1,36 +1,44 @@
 {
   "name": "@cjhsyc/icons",
-  "version": "0.0.1-beta.2",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "cjhsyc",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cjhsyc/c-icons.git"
+    "url": "https://github.com/cjhsyc/c-icons.git"
   },
   "files": [
     "dist",
-    "icons.d.ts"
+    "types"
   ],
   "main": "./dist/icons.umd.js",
   "module": "./dist/icons.es.js",
-  "types": "./dist/types/index.d.ts",
+  "types": "./types/index.d.ts",
   "exports": {
     ".": {
+      "types": "./types/index.d.ts",
       "import": "./dist/icons.es.js",
       "require": "./dist/icons.umd.js"
     }
   },
   "scripts": {
-    "build": "vite build && pnpm run build:types",
+    "build": "pnpm run build:build && vite build && pnpm run build:types",
+    "build:build": "npx tsx build/build.ts",
     "build:types": "tsc --declaration --emitDeclarationOnly"
   },
   "peerDependencies": {
     "vue": "^3.2.0"
   },
+  "dependencies": {
+    "unplugin-icons": "^0.14.8"
+  },
   "devDependencies": {
     "@types/node": "^18.6.4",
     "@vue/compiler-sfc": "^3.2.37",
+    "prettier": "^2.7.1",
+    "tsx": "^3.8.0",
     "typescript": "^4.6.4",
-    "unplugin-icons": "^0.14.8",
     "vite": "^3.0.0",
     "vue": "^3.2.37"
   }

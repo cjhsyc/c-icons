@@ -1,7 +1,6 @@
 {
   "name": "@cjhsyc/icons-play",
   "private": true,
-  "version": "0.0.1-beta.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -15,6 +14,7 @@
     "@vitejs/plugin-vue": "^3.0.0",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
-    "vue-tsc": "^0.38.4"
+    "vue-tsc": "^0.38.4",
+    "@cjhsyc/icons": "workspace:*"
   }
 }
