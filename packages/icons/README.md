@@ -29,4 +29,4 @@ import { Bofang, CIcon, Dianzan, Liebiao, Shezhi } from '@cjhsyc/icons'
 
 - 图标：[iconfont](https://www.iconfont.cn/collections/detail?cid=19171)
 
-- 开源项目：[unplugin-icons](https://github.com/antfu/unplugin-icons)
+- [unplugin-icons](https://github.com/antfu/unplugin-icons)

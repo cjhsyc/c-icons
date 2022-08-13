@@ -1,2 +1,3 @@
-import 'unplugin-icons/types/vue'
+/// <reference types="unplugin-icons/types/vue" />
+
 export * from '../dist/types/index'
