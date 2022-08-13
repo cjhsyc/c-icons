@@ -29,4 +29,4 @@ const code = formatCode(
     icons.map((icon) => `${icon},`).join('\n') +
     '\n}'
 )
-await writeFile(path.resolve(__dirname, '../src/index.ts'), code, 'utf-8')
+await writeFile(path.resolve(__dirname, '../src/icons.ts'), code, 'utf-8')

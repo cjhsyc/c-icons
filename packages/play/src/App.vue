@@ -1,41 +1,14 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-import { Bofang, Dianzan, Liebiao } from '@cjhsyc/icons'
-import { ElIcon } from 'element-plus'
-import 'element-plus/es/components/icon/style/css'
+import { Bofang, CIcon, Dianzan, Liebiao, Shezhi } from '@cjhsyc/icons'
 </script>
 
 <template>
-  <div>
-    <bofang />
-    <i style="font-size: 150px; color: skyblue">
-      <dianzan />
-    </i>
-    <el-icon :size="300" color="pink">
-      <bofang />
-    </el-icon>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <shezhi />
+  <bofang width="200" height="200" color="orange" />
+  <i style="font-size: 150px; color: skyblue">
+    <dianzan />
+  </i>
+  <c-icon :size="300" color="pink">
+    <liebiao />
+  </c-icon>
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
