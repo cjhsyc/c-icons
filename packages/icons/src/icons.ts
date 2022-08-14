@@ -1,50 +1,50 @@
-import Bofang from '~icons/c/bofang'
-import Dianzan from '~icons/c/dianzan'
-import Erji from '~icons/c/erji'
-import Fenxiang from '~icons/c/fenxiang'
-import Gedan from '~icons/c/gedan'
-import Goumai from '~icons/c/goumai'
-import Huatong from '~icons/c/huatong'
-import Jiahaoyou from '~icons/c/jiahaoyou'
-import Jiawenjian from '~icons/c/jiawenjian'
-import Liebiao from '~icons/c/liebiao'
-import Liuyan from '~icons/c/liuyan'
-import Maikefeng from '~icons/c/maikefeng'
-import Paihangbang from '~icons/c/paihangbang'
-import Shangyishou from '~icons/c/shangyishou'
-import Sheying from '~icons/c/sheying'
-import Shezhi from '~icons/c/shezhi'
-import Shipin from '~icons/c/shipin'
-import Shipinbofang from '~icons/c/shipinbofang'
-import Shoucang from '~icons/c/shoucang'
-import Xiayishou from '~icons/c/xiayishou'
-import Xiazai from '~icons/c/xiazai'
-import Xinhao from '~icons/c/xinhao'
-import Xunhuan from '~icons/c/xunhuan'
-import Yunyinyue from '~icons/c/yunyinyue'
+import AddFile from '~icons/c/addFile'
+import AddFriend from '~icons/c/addFriend'
+import BuyMusic from '~icons/c/buyMusic'
+import CloudMusic from '~icons/c/cloudMusic'
+import Collect from '~icons/c/collect'
+import Comment from '~icons/c/comment'
+import Download from '~icons/c/download'
+import Film from '~icons/c/film'
+import Headset from '~icons/c/headset'
+import Like from '~icons/c/like'
+import Loop from '~icons/c/loop'
+import Microphone from '~icons/c/microphone'
+import Mike from '~icons/c/mike'
+import MusicList from '~icons/c/musicList'
+import Next from '~icons/c/next'
+import Photography from '~icons/c/photography'
+import Play from '~icons/c/play'
+import Previous from '~icons/c/previous'
+import Ranking from '~icons/c/ranking'
+import Settings from '~icons/c/settings'
+import Share from '~icons/c/share'
+import Signal from '~icons/c/signal'
+import SongList from '~icons/c/songList'
+import VideoPlay from '~icons/c/videoPlay'
 export {
-  Bofang,
-  Dianzan,
-  Erji,
-  Fenxiang,
-  Gedan,
-  Goumai,
-  Huatong,
-  Jiahaoyou,
-  Jiawenjian,
-  Liebiao,
-  Liuyan,
-  Maikefeng,
-  Paihangbang,
-  Shangyishou,
-  Sheying,
-  Shezhi,
-  Shipin,
-  Shipinbofang,
-  Shoucang,
-  Xiayishou,
-  Xiazai,
-  Xinhao,
-  Xunhuan,
-  Yunyinyue,
+  AddFile,
+  AddFriend,
+  BuyMusic,
+  CloudMusic,
+  Collect,
+  Comment,
+  Download,
+  Film,
+  Headset,
+  Like,
+  Loop,
+  Microphone,
+  Mike,
+  MusicList,
+  Next,
+  Photography,
+  Play,
+  Previous,
+  Ranking,
+  Settings,
+  Share,
+  Signal,
+  SongList,
+  VideoPlay,
 }
