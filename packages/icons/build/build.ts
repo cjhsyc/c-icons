@@ -1,4 +1,4 @@
-import { writeFile, readdir } from 'fs/promises'
+import { readdir, writeFile } from 'fs/promises'
 import path from 'path'
 import { format } from 'prettier'
 import { fileURLToPath } from 'url'
