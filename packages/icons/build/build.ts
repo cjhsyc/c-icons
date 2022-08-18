@@ -10,8 +10,14 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const iconDir = path.resolve(__dirname, '../src/svg')
 
-// 首字母大写
-const upper = (str: string) => str.slice(0, 1).toUpperCase() + str.slice(1)
+// 短横线转大驼峰
+const hump = (str: string) => {
+  const arr = str.split('-')
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].slice(0, 1).toUpperCase() + arr[i].slice(1)
+  }
+  return arr.join('')
+}
 
 const icons = (await readdir(iconDir)).map((svg) => svg.replace('.svg', ''))
 
@@ -24,9 +30,9 @@ const formatCode = (code: string, parser: BuiltInParserName = 'typescript') =>
   })
 
 const code = formatCode(
-  icons.map((icon) => `import ${upper(icon)} from '~icons/c/${icon}'`).join('\n') +
+  icons.map((icon) => `import ${hump(icon)} from '~icons/c/${icon}'`).join('\n') +
     '\nexport {\n' +
-    icons.map((icon) => `${upper(icon)},`).join('\n') +
+    icons.map((icon) => `${hump(icon)},`).join('\n') +
     '\n}'
 )
 await writeFile(path.resolve(__dirname, '../src/icons.ts'), code, 'utf-8')
