@@ -22,13 +22,19 @@ const style = computed<CSSProperties>(() => {
 })
 </script>
 
+<script lang="ts">
+export default {
+  name: 'CIcon',
+}
+</script>
+
 <style>
 .c-icon {
   display: inline-flex;
 }
 
 .c-icon.loading {
-    animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
 }
 
 @keyframes rotating {

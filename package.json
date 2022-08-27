@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "dev": "pnpm run -C ./packages/play dev",
-    "build": "pnpm run -C ./packages/icons build"
+    "build": "pnpm run -C ./packages/icons build",
+    "publish": "cd ./packages/icons && npm publish"
   }
 }
