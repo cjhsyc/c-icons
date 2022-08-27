@@ -59,12 +59,50 @@ app.mount('#app')
 </template>
 ```
 
+## 自动导入
+
+- 需要安装`unplugin-vue-components`
+
+```bash
+pnpm add -D unplugin-vue-components
+```
+
+- 在`vite.config.ts`中配置：
+
+```typescript
+// vite.config.ts
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import Components from 'unplugin-vue-components/vite'
+import { CIconsResolver } from '@cjhsyc/icons'
+
+export default defineConfig({
+  plugins: [
+    vue(),
+    Components({
+      resolvers: CIconsResolver(),
+      dts: './src/types/components.d.ts'
+    }),
+  ],
+})
+```
+
+- 使用图标时加上前缀：`ci-`
+
+```vue
+<template>
+  <c-icon :size="160">
+    <ci-loop />
+  </c-icon>
+</template>
+```
+
 ## 运行
 
 ```bash
 # 构建图标组件
 pnpm run build
-# 本地
+# 本地测试
 pnpm run dev
 ```
 

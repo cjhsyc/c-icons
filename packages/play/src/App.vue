@@ -1,6 +1,7 @@
 <template>
   <!-- <basic /> -->
   <!-- <global /> -->
+  <!-- <auto /> -->
   <all />
 </template>
 

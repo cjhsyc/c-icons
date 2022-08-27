@@ -1,10 +1,10 @@
 <template>
   <div class="all">
-      <div class="one" v-for="icon in Icons" :key="icon.name" :title="icon.name">
+      <div class="one" v-for="icon in Icons" :key="icon.name">
         <c-icon :size="96">
           <component :is="icon"></component>
         </c-icon>
-        <span class="name">{{ icon.name }}</span>
+        <span class="name">{{ icon.name.slice(2) }}</span>
       </div>
   </div>
 </template>
